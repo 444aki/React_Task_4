@@ -7,7 +7,7 @@ const UserTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("<URL_TO_JSON_DATA>");
+        const response = await fetch("https://dummyjson.com/users");
         const data = await response.json();
         setUserData(data.users);
       } catch (error) {
